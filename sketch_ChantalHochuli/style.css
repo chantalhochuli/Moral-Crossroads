@@ -1,0 +1,146 @@
+html, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+canvas {
+  display: block;
+  cursor: url('https://www.example.com/circle-cursor.png'), auto;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.a {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-family: monospace;
+  font-size: 14px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.b {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-family: monospace;
+  font-size: 14px;
+  color: black;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.b:hover {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+}
+
+.b .tooltiptext {
+  visibility: hidden;
+  width: 400px;
+  background-color: rgba(248, 135, 174, 0.5);
+  color: black;
+  font-family: monospace;
+  text-align: left;
+  padding: 10px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  max-width: calc(100vw - 100px); /* subtract the combined width of the tooltip arrow and the distance from the right edge of the screen */
+  right: 10px;
+  top: 30px;
+  left: auto;
+}
+
+.b:hover .tooltiptext {
+  visibility: visible;
+  position: absolute;
+}
+
+.c {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-family: monospace;
+  font-size: 14px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.d {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  font-family: monospace;
+  color: black;
+  font-size: 14px;
+  align-items: right;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.d:hover {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  display: inline-block;
+}
+
+.d .tooltiptext {
+  visibility: hidden;
+  width: 400px;
+  background-color: rgba(248, 135, 174, 0.5);
+  color: black;
+  font-family: monospace;
+  text-align: left;
+  padding: 10px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  max-width: calc(100vw - 100px); /* subtract the combined width of the tooltip arrow and the distance from the right edge of the screen */
+  right: 10px;
+  bottom: 50px;
+  left: auto;
+}
+
+.d:hover .tooltiptext {
+  visibility: visible;
+  position: absolute;
+}
+
+
+::selection {
+  color: transparent;
+  text-shadow: 0 0 0.25rem #000;
+  background: transparent;
+}
